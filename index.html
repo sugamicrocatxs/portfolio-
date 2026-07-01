@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharvil Kadam | Developer Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div id="scroll-progress"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Sharvil<span>.</span></div>
+
+        <!-- Mobile Hamburg Menu -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+            <div class="badge">Hello There!</div>
+            <h3>Hello, I'm</h3>
+            <h1>Sharvil Kadam</h1>
+            <h2>I'm <span id="typing-text"></span></h2>
+
+            <p>
+                Im a student learning web development and building projects to improve my skills in HTML, CSS, JavaScript, and modern web design.
+            </p>
+
+            <div class="hero-btns">
+                <button class="btn-primary" onclick="scrollToSection('contact')">
+                    Contact Me
+                </button>
+                <button class="btn-secondary" onclick="scrollToSection('projects')">
+                    View My Work
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="img-wrapper">
+                <img src="./Depressing shit.jpg" alt="Sharvil Kadam Profile Picture">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="card about-card">
+            <div class="about-icon">👤</div>
+            <div class="about-content">
+                <p>
+                    I am a student currently learning web development and exploring front-end technologies like HTML, CSS, and JavaScript. I enjoy building small projects and improving my problem-solving skills through coding.
+                </p>
+                <p>
+                    My goal is to design applications that are not only functionally robust but visually spectacular and responsive across all screens.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Ongoing</div>
+                <div class="timeline-content">
+                    <h3>Student & Self-Taught Dev</h3>
+                    <p>
+                        Currently pursuing academics while learning programming alongside. I structure self-guided learning loops daily, focusing on JavaScript, Git control systems, and interface animations.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-card">
+                <span class="skill-icon">🌐</span>
+                <span class="skill-name">HTML</span>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">🎨</span>
+                <span class="skill-name">CSS</span>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">⚡</span>
+                <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">🌿</span>
+                <span class="skill-name">Git</span>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">💻</span>
+                <span class="skill-name">C</span>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">🐍</span>
+                <span class="skill-name">Python</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="./Instagram icon.jpg" alt="Instagram Logo">
+                    <div class="project-overlay">
+                        <button class="project-link view-project-btn" data-project="instagram">View Details</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Instagram Logo</h3>
+                    <p>A CSS art project building a detailed Instagram logo clone.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="./download.jpg" alt="Netflix Clone">
+                    <div class="project-overlay">
+                        <button class="project-link view-project-btn" data-project="netflix">View Details</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Netflix Clone</h3>
+                    <p>A responsive Netflix clone landing page with movie catalog visuals.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="./Screenshot 2026-07-01 190829.png" alt="Portfolio Website">
+                    <div class="project-overlay">
+                        <button class="project-link view-project-btn" data-project="portfolio">View Details</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>This developer portfolio site highlighting skills, projects, and bio.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="./Dark Fantasy - Masked Virginity🎭.jpg" alt="Amazon Clone">
+                    <div class="project-overlay">
+                        <button class="project-link view-project-btn" data-project="amazon">View Details</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Amazon Clone</h3>
+                    <p>Full responsive layout of Amazon's home storefront page.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="./dark fantasy witch stone cottage.jpg" alt="Calculator">
+                    <div class="project-overlay">
+                        <button class="project-link view-project-btn" data-project="calculator">View Details</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Calculator</h3>
+                    <p>A simple responsive mathematical calculator using ES6 JS functions.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="./Dark Fantasy 🥀 Silent Watcher.jpg" alt="To-Do List">
+                    <div class="project-overlay">
+                        <button class="project-link view-project-btn" data-project="todo">View Details</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>To-Do List</h3>
+                    <p>An interactive client-side task board with filtering options.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-container">
+            <!-- Left: Interactive Form -->
+            <form class="contact-form" id="contact-form">
+                <h3>Send a Message</h3>
+                <div class="input-group">
+                    <input type="text" id="form-name" required placeholder=" ">
+                    <label for="form-name">Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="form-email" required placeholder=" ">
+                    <label for="form-email">Your Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="form-message" required placeholder=" " rows="4"></textarea>
+                    <label for="form-message">Your Message</label>
+                </div>
+                <button type="submit" class="btn-submit">
+                    Send Message
+                    <span class="btn-loader"></span>
+                </button>
+            </form>
+
+            <!-- Right: Details Card -->
+            <div class="contact-details card">
+                <h3>Contact Info</h3>
+                <div class="detail-item">
+                    <span class="detail-icon">📧</span>
+                    <div>
+                        <p class="detail-label">Email</p>
+                        <a href="mailto:suga.microcat@gmail.com" class="detail-value">suga.microcat@gmail.com</a>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">📞</span>
+                    <div>
+                        <p class="detail-label">Phone</p>
+                        <a href="tel:+918669082720" class="detail-value">+91 8669082720</a>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">🌐</span>
+                    <div>
+                        <p class="detail-label">GitHub</p>
+                        <a href="https://github.com/sugamicrocatxs" target="_blank" class="detail-value">github.com/sugamicrocatxs</a>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">📍</span>
+                    <div>
+                        <p class="detail-label">Location</p>
+                        <p class="detail-value">Pune, Maharashtra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Quote -->
+    <section class="quote-section">
+        <div class="quote-card">
+            <span class="quote-mark">“</span>
+            <h2>Code. Learn. Improve. Repeat.</h2>
+            <p>Every single line of code is a step toward building something greater.</p>
+        </div>
+    </section>
+
+    <!-- Toast Notifications Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-project-details">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sharvil Kadam | All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
